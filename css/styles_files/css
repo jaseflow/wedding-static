@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Montez';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montez'), local('Montez-Regular'), url(http://themes.googleusercontent.com/static/fonts/montez/v3/Ww9DrCS2WNNzzypZe0hgpuvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
