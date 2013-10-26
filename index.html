@@ -16,8 +16,28 @@
         <script src="/js/jquery.nav.js"></script>
         <script src="/js/jquery.scrollTo.js"></script>
         <script src="/js/entry.js"></script>
-</script>
-        <title></title>
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(-27.473019,152.992083);
+  var mapOptions = {
+    zoom: 15,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+        <title>Jason and Gizela are getting married!</title>
     </head>
     <body>
         <div class="header">
@@ -38,8 +58,8 @@
                 We're getting married
                 <small class="landing__caption">November 30th 2013</small>
             </h2>
-            <div id="test">
-            <a href="#rsvp" class="btn btn--large landing__action">RSVP</a>
+            <div id="action">
+              <a href="#rsvp" class="btn btn--large landing__action">RSVP</a>
             </div>
           </div>
         </div>
@@ -54,25 +74,25 @@
         </div>
         <div class="section" id="whats-happening">
           <div class="section__container">
-            <h3 class="section__title">What's happening?</h3>
+            <h3 class="section__title">The ceremony</h3>
             <h5 class="section__sub">
-              The service (City Botanical Gardens)
-              <small>Please arrive at 3:15pm for a 3:30pm start.</small>
+              City Botanical Gardens (Wedding Lawn)
+              <small>Please arrive at 3:15pm sharp for a 3:30pm start.</small>
             </h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ullam, repellendus autem recusandae animi possimus dolor debitis molestias sunt voluptate vitae porro temporibus facilis iure perspiciatis impedit aliquid ut quos.</p>
-            <h5 class="section__sub">
-              The reception (Auchenflower)
-              <small>Reception begins at 6:00pm. 22 Dart St, Auchenflower.</small>
-            </h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, impedit nulla cum dolor saepe magnam voluptates molestiae recusandae veniam vel quasi iure harum officia dolore ipsam autem omnis doloremque sequi.</p>
+            <p>Join us at 3:00pm on the Wedding Lawn at the Brisbane Botanical Gardens. The Wedding Lawn is in the north-east corner of the gardens, right in front of the fountain. After the ceremony there will be a couple of hours while the bridal party takes photos.</p>
+            <p><img src="/img/garden-map.jpg" alt=""></p>
           </div>
         </div>
         <div class="section" id="directions">
           <div class="section__container">
-            <h3 class="section__title">Directions</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ullam, repellendus autem recusandae animi possimus dolor debitis molestias sunt voluptate vitae porro temporibus facilis iure perspiciatis impedit aliquid ut quos.</p>
-           
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, impedit nulla cum dolor saepe magnam voluptates molestiae recusandae veniam vel quasi iure harum officia dolore ipsam autem omnis doloremque sequi.</p>
+            <h3 class="section__title">The reception</h3>
+            <h5 class="section__sub">
+              22 Dart St, Auchenflower
+              <small>Reception begins at 6:00pm.</small>
+            </h5>
+            <p>We then take the celebrations to Auchenflower for a relaxed night of food and drinks.</p>
+            <h4 class="note">Please consider catching a taxi as this is a small residential street with limited parking space.</h4>
+            <div id="map-canvas" class="map"></div>
           </div>
         </div>
         <div id="video" class="modal">
