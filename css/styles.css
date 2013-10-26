@@ -283,6 +283,7 @@ p {
 }
 
 .header {
+  display: none;
   background-color: #FAE887;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.4);
@@ -311,7 +312,7 @@ p {
   text-decoration: none;
   transition: all 0.25s ease;
   font-size: 14px;
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .nav a:hover {
