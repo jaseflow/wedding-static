@@ -99,7 +99,6 @@ p {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  border-bottom: 1px solid #ddd;
   background-image: url(/img/garden.jpg);
   position: relative;
   background-size: cover;
