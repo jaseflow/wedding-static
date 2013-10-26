@@ -31,10 +31,12 @@ p {
   margin-bottom: 24px;
 }
 .logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  -webkit-animation: fadeInUp 1s ease;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-image: url(/img/kiss.jpg);
+  background-size: cover;
+  border: 5px solid #fff;
 }
 .slider {
   position: relative;
@@ -111,6 +113,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  -webkit-animation: fadeInDown 2s ease;
 }
 
 .hero p {
@@ -121,7 +124,6 @@ p {
   font-weight: 100;
   font-size: 24px;
   padding-top: 24px;
-  -webkit-animation: fadeInDown 2s ease;
   color: #fff;
 }
 
@@ -170,6 +172,11 @@ p {
 .btn--block {
   width: 100%;
 }
+
+.btn--large {
+  padding: 20px 100px;
+}
+
 .hero__cancel {
   color: #555;
   font-size: 14px;
