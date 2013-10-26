@@ -62,7 +62,8 @@ p {
   left: 100%;
 }
 
-.landing {
+.hero {
+  -webkit-transform: translate3d(0);
   position: relative;
   text-align: center;
   padding: 20px;
@@ -76,17 +77,30 @@ p {
   border-bottom: 1px solid #ddd;
   background-image: url(/img/wedding-hero.jpg);
   background-size: cover;
-  background-position: -3650px;
-  -webkit-animation: slideHero 150s infinite;
+  /*-webkit-animation: slideHero 150s infinite;*/
+  height: 50vh;
 }
 
+.hero__shadow,
 .landing__shadow {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.landing {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border-bottom: 1px solid #ddd;
+  background-image: url(/img/garden.jpg);
+  position: relative;
+  background-size: cover;
 }
 
 .landing__content {
@@ -96,9 +110,10 @@ p {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.landing p {
+.hero p {
   font-size: 18px;
 }
 
@@ -106,8 +121,8 @@ p {
   font-weight: 100;
   font-size: 24px;
   padding-top: 24px;
-   color: rgba(255,255,255,0.8); 
   -webkit-animation: fadeInDown 2s ease;
+  color: #fff;
 }
 
 .landing__caption {
@@ -128,6 +143,11 @@ p {
   margin-right: 10px;
   line-height: 0;
 }
+
+.landing__action {
+  margin-top: 24px;
+}
+
 .btn {
   display: block;
   background-color: #fff690;
@@ -150,7 +170,7 @@ p {
 .btn--block {
   width: 100%;
 }
-.landing__cancel {
+.hero__cancel {
   color: #555;
   font-size: 14px;
 }
@@ -258,6 +278,7 @@ p {
 .header {
   background-color: #FAE887;
   padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 .nav {
@@ -280,6 +301,7 @@ p {
 .nav a {
   color: #555;
   font-weight: bold;
+  text-decoration: none;
   transition: all 0.25s ease;
   font-size: 14px;
   font-family: 'Helvetica Neue';
@@ -321,14 +343,18 @@ p {
   font-weight: 200;
 }
 
+.slide {
+  height: 100vh;
+}
+
 @media only screen and (min-width: 768px) {
 
-  .landing {
-    min-height: 40vh;
+  .hero {
+    margin-bottom: 24px;
   }
 
   .landing__title {
-    font-size: 38px;
+    font-size: 48px;
   }
 
   .section__container {
