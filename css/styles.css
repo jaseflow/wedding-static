@@ -380,6 +380,17 @@ p {
 
 @media only screen and (min-width: 768px) {
 
+  .landing {
+    position: absolute;
+    width: 100%;
+    transition: -webkit-transform 0.4s ease;
+  }
+  
+  .content {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
   .landing__title {
     font-size: 48px;
   }
