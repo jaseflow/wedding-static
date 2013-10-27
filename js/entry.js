@@ -22,11 +22,11 @@ $(function() {
       }
   });
 
-  $('.landing__action').click(function(e) {
-    e.preventDefault();
-    $('.landing').css('-webkit-transform','translateY(-100%)');
-    $('.content').css('opacity','1');
-  });
+  // $('.landing__action').click(function(e) {
+  //   e.preventDefault();
+  //   $('.landing').css('-webkit-transform','translateY(-100%)');
+  //   $('.content').css('opacity','1');
+  // });
 
 
 });
