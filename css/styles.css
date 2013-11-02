@@ -373,11 +373,10 @@ p {
 }
 
 .map {
-  height: 100px;
+  height: 280px;
   width: 100%;
   background-color: #eee;
   border: 1px solid #999;
-  margin-bottom: 24px;
 }
 
 .note {
