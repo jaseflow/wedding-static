@@ -30,10 +30,20 @@ h4 {
 p {
   margin-bottom: 24px;
 }
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
 .logo {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 75px;
   background-image: url(/img/kiss.jpg);
   background-size: cover;
   border: 5px solid #fff;
@@ -94,32 +104,33 @@ p {
 }
 
 .landing {
+  border-radius: 2px;
   background-color: #fff;
-  display: flex;
-  display: -webkit-flex;
   align-items: center;
   -webkit-align-items: center;
   justify-content: center;
   -webkit-justify-content: center;
-  height: 100vh;
   background-image: url(/img/garden.jpg);
   position: relative;
   background-size: cover;
   margin-bottom: 24px;
+  text-align: center;
+  min-height: 300px;
 }
 
 .landing__content {
   position: relative;
   z-index: 10;
-  display: flex;
-  display: -webkit-flex;
-  flex-flow: column;
-  -webkit-flex-flow: column;
+  padding: 20px;
+  -webkit-box-flex-flow: column;
+  -moz-box-flex-flow:  column;
+  -webkit-flex-flow:  column;
+  -ms-flex-flow:  column;
+  flex-flow:  column;
   justify-content: center;
   -webkit-justify-content: center;
   align-items: center;
   -webkit-align-items: center;
-  text-align: center;
   -webkit-animation: fadeInDown 2s ease;
 }
 
@@ -128,17 +139,17 @@ p {
 }
 
 .landing__title {
-  font-weight: 100;
-  font-size: 24px;
+  font-weight: bold;
+  font-size: 22px;
   padding-top: 24px;
   color: #fff;
 }
 
 .landing__caption {
   display: block;
-  font-size: 22px;
-  padding-top: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  padding-top: 6px;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -362,7 +373,7 @@ p {
 }
 
 .map {
-  height: 50vh;
+  height: 100px;
   width: 100%;
   background-color: #eee;
   border: 1px solid #999;
